@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عيادة الدكتورة روان حسن لطب وجراحة الأسنان — عمّان</title>
+<meta name="description" content="عيادة الدكتورة روان حسن لطب وجراحة الأسنان في عمّان — طريق ياجوز. تقييم ٥٫٠ على جوجل، مفتوحة ٢٤ ساعة طوال أيام الأسبوع. احجز موعدك عبر واتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#FAF6EF;
+  --ivory-2:#F2EADC;
+  --paper:#FFFFFF;
+  --espresso:#2C2822;
+  --espresso-soft:#5C544A;
+  --gold:#BB9645;
+  --gold-deep:#9C7B31;
+  --gold-light:#E6D3A3;
+  --teal:#2C6E6A;
+  --teal-deep:#215350;
+  --line:rgba(44,40,34,.12);
+  --shadow-sm:0 2px 10px rgba(44,40,34,.06);
+  --shadow-md:0 18px 50px -22px rgba(44,40,34,.30);
+  --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;
+  background:var(--ivory);
+  color:var(--espresso);
+  line-height:1.75;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3{font-family:'El Messiri',serif;font-weight:700;line-height:1.2;letter-spacing:.2px}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(20px,5vw,44px)}
+.lat{font-family:'Cormorant Garamond',serif;letter-spacing:.5px}
+
+/* ---------- eyebrow ---------- */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.78rem;font-weight:600;letter-spacing:2px;
+  color:var(--gold-deep);text-transform:uppercase;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+html[dir=rtl] .eyebrow::before{background:linear-gradient(270deg,var(--gold),transparent)}
+
+/* ---------- leaf mark ---------- */
+.leaf{width:1em;height:1em;display:inline-block;color:var(--gold)}
+
+/* ---------- header ---------- */
+header{
+  position:fixed;inset-inline:0;top:0;z-index:60;
+  transition:background .4s ease,box-shadow .4s ease,padding .4s ease,border-color .4s ease;
+  padding:18px 0;border-bottom:1px solid transparent;
+}
+header.scrolled{
+  background:rgba(250,246,239,.86);
+  backdrop-filter:saturate(1.4) blur(14px);
+  -webkit-backdrop-filter:saturate(1.4) blur(14px);
+  box-shadow:var(--shadow-sm);
+  padding:10px 0;border-color:var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand .mark{width:38px;height:38px;flex:none;color:var(--gold)}
+.brand .txt{display:flex;flex-direction:column;line-height:1.15;min-width:0}
+.brand .txt b{font-family:'El Messiri',serif;font-size:1.06rem;font-weight:700;color:var(--espresso);white-space:nowrap}
+.brand .txt span{font-family:'Cormorant Garamond',serif;font-size:.82rem;letter-spacing:1.5px;color:var(--gold-deep);text-transform:uppercase}
+nav ul{display:none;list-style:none;gap:30px;align-items:center}
+nav ul a{font-size:.92rem;font-weight:500;color:var(--espresso-soft);position:relative;padding:4px 0;transition:color .25s}
+nav ul a::after{content:"";position:absolute;bottom:-2px;inset-inline:0;height:1.5px;background:var(--gold);transform:scaleX(0);transform-origin:center;transition:transform .3s ease}
+nav ul a:hover{color:var(--espresso)}
+nav ul a:hover::after{transform:scaleX(1)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:600;font-size:.95rem;
+  min-height:48px;padding:0 22px;border-radius:100px;cursor:pointer;border:1px solid transparent;
+  transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s;
+  white-space:nowrap;
+}
+.btn svg{width:20px;height:20px}
+.btn-wa{background:var(--teal);color:#fff;box-shadow:0 10px 24px -12px var(--teal)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 16px 30px -12px var(--teal);background:var(--teal-deep)}
+.btn-ghost{background:transparent;color:var(--espresso);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-deep);transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;box-shadow:0 12px 26px -12px var(--gold-deep)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 34px -12px var(--gold-deep)}
+.header-cta{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:132px 0 74px;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-2;
+  background:
+    radial-gradient(120% 80% at 82% 0%,#FFFDF8 0%,var(--ivory) 42%,var(--ivory-2) 100%);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;opacity:.5;
+  background:
+    repeating-linear-gradient(115deg,transparent 0 40px,rgba(187,150,69,.04) 40px 41px),
+    radial-gradient(60% 40% at 12% 20%,rgba(44,110,106,.06),transparent 60%);
+}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:clamp(34px,6vw,64px);align-items:center}
+.hero-copy .eyebrow{margin-bottom:20px}
+.hero h1{font-size:clamp(2.15rem,8vw,4rem);letter-spacing:-.5px}
+.hero h1 .accent{color:var(--gold-deep);position:relative;white-space:nowrap}
+.hero .subline{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(1.15rem,4.4vw,1.6rem);color:var(--espresso-soft);margin-top:14px;letter-spacing:.4px;
+}
+.hero p.lede{font-size:clamp(1rem,3.8vw,1.14rem);color:var(--espresso-soft);margin-top:20px;max-width:46ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.hero-cta .btn{flex:1 1 auto;min-width:200px}
+
+/* trust seal */
+.trust-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.seal{
+  display:flex;align-items:center;gap:13px;background:var(--paper);
+  border:1px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow-sm);
+  flex:1 1 200px;
+}
+.seal .big{font-family:'El Messiri',serif;font-weight:700;font-size:1.5rem;line-height:1;color:var(--espresso)}
+.seal .stars{color:var(--gold);font-size:.9rem;letter-spacing:2px;line-height:1}
+.seal .lbl{font-size:.82rem;color:var(--espresso-soft)}
+.seal.open .dot{width:11px;height:11px;border-radius:50%;background:var(--teal);position:relative;flex:none}
+.seal.open .dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--teal);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(2.6);opacity:0}}
+
+/* hero visual */
+.hero-visual{position:relative}
+.hero-frame{
+  position:relative;border-radius:26px;overflow:hidden;box-shadow:var(--shadow-md);
+  aspect-ratio:3/4;background:var(--ivory-2);
+}
+.hero-frame img{width:100%;height:100%;object-fit:cover}
+.hero-badge{
+  position:absolute;inset-inline-start:-6px;bottom:26px;z-index:3;
+  background:var(--paper);border:1px solid var(--line);border-radius:18px;
+  padding:14px 18px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:12px;
+}
+.hero-badge .ring{
+  width:46px;height:46px;border-radius:50%;flex:none;
+  background:conic-gradient(var(--gold) 0 100%);display:grid;place-items:center;color:#fff;
+  font-family:'El Messiri',serif;font-weight:700;font-size:.86rem;
+}
+.hero-badge .ring b{background:var(--paper);color:var(--gold-deep);width:37px;height:37px;border-radius:50%;display:grid;place-items:center;font-size:.8rem;line-height:1;text-align:center}
+.hero-badge small{display:block;font-size:.72rem;color:var(--espresso-soft)}
+.hero-badge strong{font-family:'El Messiri',serif;font-size:.98rem}
+
+/* ---------- section frame ---------- */
+section{position:relative}
+.blk{padding:clamp(64px,10vw,104px) 0}
+.sec-head{max-width:620px;margin-bottom:clamp(34px,6vw,54px)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head h2{font-size:clamp(1.7rem,6vw,2.7rem);margin-top:16px}
+.sec-head p{color:var(--espresso-soft);margin-top:14px;font-size:1.03rem}
+
+/* divider leaf */
+.divider{display:flex;align-items:center;justify-content:center;gap:16px;color:var(--gold);opacity:.9}
+.divider span{height:1px;width:min(120px,22vw);background:linear-gradient(90deg,transparent,var(--gold-light),var(--gold))}
+.divider svg{width:26px;height:26px}
+
+/* ---------- about ---------- */
+.about{background:linear-gradient(180deg,var(--ivory),#FBF8F2)}
+.about-grid{display:grid;grid-template-columns:1fr;gap:clamp(32px,6vw,58px);align-items:center}
+.about-media{position:relative;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-md);aspect-ratio:4/5}
+.about-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s ease}
+.about-media:hover img{transform:scale(1.05)}
+.about-media .tag{
+  position:absolute;top:18px;inset-inline-start:18px;background:rgba(44,40,34,.72);color:#fff;
+  backdrop-filter:blur(4px);font-size:.8rem;padding:8px 14px;border-radius:100px;letter-spacing:.5px;
+}
+.about h2{font-size:clamp(1.7rem,6vw,2.6rem)}
+.about .lede{margin-top:18px;color:var(--espresso-soft);font-size:1.06rem}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.pillar{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px}
+.pillar .ico{width:34px;height:34px;color:var(--gold);margin-bottom:10px}
+.pillar b{font-family:'El Messiri',serif;font-size:1.05rem;display:block}
+.pillar small{color:var(--espresso-soft);font-size:.86rem;line-height:1.6}
+
+/* ---------- services ---------- */
+.services{background:
+  radial-gradient(70% 50% at 100% 0,rgba(44,110,106,.05),transparent 60%),
+  var(--ivory);}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.svc{
+  position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px 24px;overflow:hidden;
+  transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;
+}
+.svc::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--gold),var(--gold-deep));transform:scaleY(0);transform-origin:top;transition:transform .4s ease}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:transparent}
+.svc:hover::before{transform:scaleY(1)}
+.svc .num{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold-deep);letter-spacing:1px}
+.svc .ico{width:40px;height:40px;color:var(--teal);margin:6px 0 14px}
+.svc h3{font-size:1.24rem;margin-bottom:8px}
+.svc p{color:var(--espresso-soft);font-size:.95rem;line-height:1.7}
+.svc.feature{background:linear-gradient(150deg,var(--teal),var(--teal-deep));color:#fff;border-color:transparent}
+.svc.feature .num,.svc.feature .ico{color:var(--gold-light)}
+.svc.feature p{color:rgba(255,255,255,.85)}
+.svc.feature h3{color:#fff}
+
+/* ---------- gallery ---------- */
+.gallery{background:linear-gradient(180deg,#FBF8F2,var(--ivory))}
+.gal-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.gal-item{position:relative;overflow:hidden;border-radius:20px;box-shadow:var(--shadow-sm);aspect-ratio:4/3}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.gal-item:hover img{transform:scale(1.09)}
+.gal-item .cap{
+  position:absolute;inset-inline:0;bottom:0;padding:22px 20px 16px;color:#fff;font-size:.92rem;font-weight:500;
+  background:linear-gradient(0deg,rgba(30,27,22,.72),transparent);
+  opacity:0;transform:translateY(8px);transition:opacity .4s,transform .4s;
+}
+.gal-item:hover .cap{opacity:1;transform:none}
+
+/* ---------- hours + location ---------- */
+.visit{background:var(--espresso);color:#F5EFE4;position:relative;overflow:hidden}
+.visit::before{content:"";position:absolute;inset:0;opacity:.5;background:
+  radial-gradient(50% 60% at 90% 0,rgba(187,150,69,.16),transparent 60%),
+  radial-gradient(40% 50% at 0 100%,rgba(44,110,106,.22),transparent 60%);}
+.visit .wrap{position:relative}
+.visit .eyebrow{color:var(--gold-light)}
+.visit .eyebrow::before{background:linear-gradient(270deg,var(--gold-light),transparent)}
+.visit-grid{display:grid;grid-template-columns:1fr;gap:clamp(30px,5vw,48px);align-items:stretch}
+.hours-card{background:rgba(255,255,255,.05);border:1px solid rgba(245,239,228,.14);border-radius:24px;padding:clamp(26px,5vw,38px)}
+.hours-card h2{color:#fff;font-size:clamp(1.8rem,7vw,2.6rem)}
+.always{display:flex;align-items:center;gap:16px;margin:24px 0;padding:20px;border-radius:18px;background:linear-gradient(135deg,rgba(44,110,106,.35),rgba(187,150,69,.14));border:1px solid rgba(230,211,163,.2)}
+.always .clock{width:52px;height:52px;flex:none;color:var(--gold-light)}
+.always .big{font-family:'El Messiri',serif;font-size:clamp(1.5rem,6vw,2rem);color:#fff;line-height:1.1}
+.always small{color:rgba(245,239,228,.7);font-size:.9rem}
+.rows{list-style:none;display:grid;gap:2px}
+.rows li{display:flex;justify-content:space-between;padding:12px 4px;border-bottom:1px solid rgba(245,239,228,.1);font-size:.98rem}
+.rows li span:last-child{color:var(--gold-light);font-weight:600}
+.info-line{display:flex;gap:12px;align-items:flex-start;margin-top:20px;color:rgba(245,239,228,.85);font-size:.98rem}
+.info-line svg{width:22px;height:22px;color:var(--gold-light);flex:none;margin-top:2px}
+.map-wrap{border-radius:24px;overflow:hidden;box-shadow:var(--shadow-md);min-height:340px;position:relative;border:1px solid rgba(245,239,228,.14)}
+.map-wrap iframe{width:100%;height:100%;min-height:340px;border:0;filter:saturate(.92)}
+.visit-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+
+/* ---------- contact ---------- */
+.contact{background:linear-gradient(180deg,var(--ivory),var(--ivory-2))}
+.contact-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:28px;
+  padding:clamp(34px,6vw,60px);text-align:center;box-shadow:var(--shadow-md);position:relative;overflow:hidden;
+}
+.contact-card::before{content:"";position:absolute;inset-inline:0;top:0;height:5px;background:linear-gradient(90deg,var(--teal),var(--gold),var(--teal))}
+.contact-card h2{font-size:clamp(1.7rem,6vw,2.6rem)}
+.contact-card p{color:var(--espresso-soft);margin:16px auto 6px;max-width:48ch}
+.contact-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:28px}
+.contact-cta .btn{min-width:210px}
+.phone-line{margin-top:22px;font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:1px;color:var(--espresso);direction:ltr;unicode-bidi:embed}
+
+/* ---------- footer ---------- */
+footer{background:var(--espresso);color:rgba(245,239,228,.7);padding:44px 0}
+.foot{display:flex;flex-direction:column;gap:22px;align-items:center;text-align:center}
+.foot .brand .txt b{color:#fff}
+.foot .brand .txt span{color:var(--gold-light)}
+.foot-meta{font-size:.9rem;line-height:1.9}
+.foot-meta a{color:var(--gold-light)}
+.foot-credit{font-size:.86rem;color:rgba(245,239,228,.55);border-top:1px solid rgba(245,239,228,.12);padding-top:20px;width:100%}
+.foot-credit a{color:var(--gold-light);font-weight:600}
+
+/* ---------- floating wa ---------- */
+.fab{
+  position:fixed;inset-inline-end:18px;bottom:18px;z-index:70;
+  width:58px;height:58px;border-radius:50%;background:var(--teal);color:#fff;
+  display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(44,110,106,.7);
+  transition:transform .3s ease;
+}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:30px;height:30px}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+/* ---------- responsive ---------- */
+@media(min-width:600px){
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .contact-cta .btn{flex:0 1 auto}
+}
+@media(min-width:900px){
+  nav ul{display:flex}
+  .header-cta{display:inline-flex}
+  .hero{padding:150px 0 96px}
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .about-grid{grid-template-columns:.9fr 1.1fr}
+  .svc-grid{grid-template-columns:repeat(3,1fr)}
+  .gal-grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr}
+  .gal-item.wide{grid-column:span 2;aspect-ratio:auto}
+  .visit-grid{grid-template-columns:1fr 1.05fr}
+  .foot{flex-direction:row;justify-content:space-between;text-align:start}
+  .foot-credit{display:flex;justify-content:space-between;align-items:center}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="عيادة الدكتورة روان حسن">
+      <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 4C24 16 30 22 42 24 30 26 24 32 24 44 24 32 18 26 6 24 18 22 24 16 24 4Z" fill="currentColor" opacity=".9"/>
+        <path d="M24 12C24 19 27 22 34 24 27 26 24 29 24 36 24 29 21 26 14 24 21 22 24 19 24 12Z" fill="#FAF6EF"/>
+        <circle cx="24" cy="24" r="3.2" fill="currentColor"/>
+      </svg>
+      <span class="txt">
+        <b>د. روان حسن</b>
+        <span class="lat">Dental &amp; Oral Surgery</span>
+      </span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">عن العيادة</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#gallery">المعرض</a></li>
+        <li><a href="#visit">المواعيد والموقع</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-wa header-cta" href="https://wa.me/962781785148?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%81%D9%8A%20%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B1%D9%88%D8%A7%D9%86%20%D8%AD%D8%B3%D9%86" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.24A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.09-.47-4.34-1.28l-.31-.2-3.13.73.67-3.05-.2-.32A7.94 7.94 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+      احجز موعدك
+    </a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<a id="top"></a>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow reveal">طب وجراحة الأسنان · عمّان</span>
+      <h1 class="reveal d1">عيادة <span class="accent">الدكتورة روان حسن</span><br>لطب وجراحة الأسنان</h1>
+      <div class="subline lat reveal d2">Dr. Rawan Hassan · Dental &amp; Oral Surgery Clinic</div>
+      <p class="lede reveal d2">عناية تُصمَّم لابتسامتكِ وابتسامته — دقّة طبية، لمسة جمالية، وراحة تشعرون بها من أول موعد. على طريق ياجوز في عمّان، وأبوابنا مفتوحة على مدار الساعة.</p>
+      <div class="hero-cta reveal d3">
+        <a class="btn btn-wa" href="https://wa.me/962781785148?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%81%D9%8A%20%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B1%D9%88%D8%A7%D9%86%20%D8%AD%D8%B3%D9%86" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.24A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.09-.47-4.34-1.28l-.31-.2-3.13.73.67-3.05-.2-.32A7.94 7.94 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm5.5-5.6c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+          احجز موعدك عبر واتساب
+        </a>
+        <a class="btn btn-ghost" href="#services">تعرّف على خدماتنا</a>
+      </div>
+      <div class="trust-row reveal d3">
+        <div class="seal">
+          <div>
+            <div class="big">٥٫٠</div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="lbl">تقييم كامل<br>على خرائط جوجل</div>
+        </div>
+        <div class="seal open">
+          <span class="dot"></span>
+          <div>
+            <div class="big">٢٤ ساعة</div>
+            <div class="lbl">مفتوحة طوال أيام الأسبوع</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal d2">
+      <div class="hero-frame">
+        <img src="assets/reception.jpg" width="900" height="1200" alt="استقبال عيادة الدكتورة روان حسن لطب الأسنان">
+      </div>
+      <div class="hero-badge">
+        <div class="ring"><b>٥٫٠</b></div>
+        <div>
+          <small>تقييم زوّارنا</small>
+          <strong>ثقة تُبنى بابتسامة</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="blk about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media reveal">
+      <span class="tag">داخل العيادة</span>
+      <img src="assets/room-2.jpg" width="1100" height="827" loading="lazy" alt="غرفة علاج في عيادة الدكتورة روان حسن">
+    </div>
+    <div>
+      <span class="eyebrow reveal">عن العيادة</span>
+      <h2 class="reveal d1">عناية بالأسنان بمعايير طبية دقيقة<br>وإحساس بالجمال</h2>
+      <p class="lede reveal d1">في عيادة الدكتورة روان حسن نجمع بين تخصّص طب وجراحة الأسنان وبين بيئة هادئة ومريحة صُمِّمت لتُشعركم بالاطمئنان. نستقبل كل حالة بخطة علاج واضحة، ونعتني بأدقّ التفاصيل — من أول استشارة حتى الابتسامة النهائية.</p>
+      <div class="pillars">
+        <div class="pillar reveal d1">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.5-7 10-7 10z"/></svg>
+          <b>طبيبة مختصّة</b>
+          <small>إشراف الدكتورة روان حسن على كل مرحلة من العلاج.</small>
+        </div>
+        <div class="pillar reveal d2">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <b>مفتوحة ٢٤ ساعة</b>
+          <small>موعدك متاح في أي وقت، بما في ذلك حالات الطوارئ.</small>
+        </div>
+        <div class="pillar reveal d1">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg>
+          <b>تعقيم وسلامة</b>
+          <small>بروتوكولات تعقيم صارمة وأجهزة حديثة في كل غرفة.</small>
+        </div>
+        <div class="pillar reveal d2">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L3.2 7.7l5.4-.8z"/></svg>
+          <b>تقييم ٥٫٠</b>
+          <small>ثقة مرضانا هي أصدق شهادة على جودة عنايتنا.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="blk services" id="services">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow reveal">خدماتنا</span>
+      <h2 class="reveal d1">علاجات شاملة لكل ما تحتاجه ابتسامتك</h2>
+      <p class="reveal d1">من العناية اليومية إلى جراحة الفم والفكين وتجميل الأسنان — كل خدمة تُقدَّم بخطة واضحة وأيدٍ متخصّصة.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="num lat">01</div>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c-2 0-3 1-4.5 1S5 3.5 4 4.5C2.5 6 3.5 9 4 12c.4 2.4.8 6 2.2 6 1.1 0 1.3-2.4 2.3-3.6.6-.7 1.7-.7 2.4 0 1 1.2 1.2 3.6 2.3 3.6 1.4 0 1.8-3.6 2.2-6 .5-3 1.5-6 0-7.5-1-1-2-.5-3.5-.5S14 3 12 3z"/></svg>
+        <h3>زراعة الأسنان</h3>
+        <p>حلول ثابتة وطبيعية المظهر لتعويض الأسنان المفقودة واستعادة وظيفة المضغ والثقة.</p>
+      </article>
+      <article class="svc feature reveal d1">
+        <div class="num lat">02</div>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c-2 0-3 1-4.5 1S5 3.5 4 4.5C2.5 6 3.5 9 4 12c.4 2.4.8 6 2.2 6 1.1 0 1.3-2.4 2.3-3.6.6-.7 1.7-.7 2.4 0 1 1.2 1.2 3.6 2.3 3.6 1.4 0 1.8-3.6 2.2-6 .5-3 1.5-6 0-7.5-1-1-2-.5-3.5-.5S14 3 12 3z"/></svg>
+        <h3>الفينير وابتسامة هوليوود</h3>
+        <p>تصميم ابتسامة متناسقة بعدسات الفينير والتلبيسات التجميلية — نتائج طبيعية تليق بملامحك.</p>
+      </article>
+      <article class="svc reveal d2">
+        <div class="num lat">03</div>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15c0-4 3-9 8-9s8 5 8 9M4 15c0 2 1 4 3 4s2-2 5-2 3 2 5 2 3-2 3-4"/></svg>
+        <h3>جراحة الفم والفكين</h3>
+        <p>خلع الأضراس المطمورة وجراحات اللثة والعظم بدقّة عالية وتخدير مريح وآمن.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="num lat">04</div>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 20V10a6 6 0 0112 0v10M9 20v-6M15 20v-6"/></svg>
+        <h3>تقويم الأسنان</h3>
+        <p>تقويم معدني وشفّاف لتصحيح اصطفاف الأسنان وإطباق الفكّين لابتسامة متوازنة.</p>
+      </article>
+      <article class="svc reveal d1">
+        <div class="num lat">05</div>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 6.2 16.9l.9-5.4L3.2 7.7l5.4-.8z"/></svg>
+        <h3>تبييض وتجميل الأسنان</h3>
+        <p>تبييض احترافي وحشوات تجميلية بلون الأسنان لإشراقة طبيعية وابتسامة أكثر نضارة.</p>
+      </article>
+      <article class="svc reveal d2">
+        <div class="num lat">06</div>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c-2 0-3 1-4.5 1S5 3.5 4 4.5C2.5 6 3.5 9 4 12c.4 2.4.8 6 2.2 6 1.1 0 1.3-2.4 2.3-3.6.6-.7 1.7-.7 2.4 0 1 1.2 1.2 3.6 2.3 3.6 1.4 0 1.8-3.6 2.2-6 .5-3 1.5-6 0-7.5-1-1-2-.5-3.5-.5S14 3 12 3z"/><path d="M9 9l6 6M15 9l-6 6" stroke-width="1"/></svg>
+        <h3>علاج العصب والحشوات</h3>
+        <p>علاج جذور دقيق وحشوات متينة لإنقاذ الأسنان المتضرّرة وإيقاف الألم بلطف.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="num lat">07</div>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3"/><path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>
+        <h3>طب أسنان الأطفال</h3>
+        <p>تجربة ودودة ولطيفة لأطفالكم تبني عادات سليمة وعلاقة إيجابية مع طبيب الأسنان.</p>
+      </article>
+      <article class="svc reveal d1">
+        <div class="num lat">08</div>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <h3>طوارئ الأسنان — ٢٤ ساعة</h3>
+        <p>ألم مفاجئ أو كسر أو خرّاج؟ نستقبلكم في أي وقت من اليوم دون انتظار.</p>
+      </article>
+      <article class="svc reveal d2">
+        <div class="num lat">09</div>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6M9 16h6M9 8h6M6 3h12v18H6z"/></svg>
+        <h3>استشارة وخطة علاج</h3>
+        <p>فحص شامل وخطة واضحة بالتكلفة والمراحل قبل بدء أي إجراء — لا مفاجآت.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="blk gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow reveal">من داخل العيادة</span>
+      <h2 class="reveal d1">مساحة هادئة صُمّمت لراحتكم</h2>
+      <div class="divider reveal d1" style="margin-top:18px">
+        <span></span>
+        <svg viewBox="0 0 48 48" fill="currentColor" aria-hidden="true"><path d="M24 6C24 17 29 22 40 24 29 26 24 31 24 42 24 31 19 26 8 24 19 22 24 17 24 6Z"/></svg>
+        <span></span>
+      </div>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item wide reveal">
+        <img src="assets/lounge.jpg" width="1100" height="827" loading="lazy" alt="صالة انتظار عيادة الدكتورة روان حسن">
+        <figcaption class="cap">صالة استقبال دافئة وأنيقة</figcaption>
+      </figure>
+      <figure class="gal-item reveal d1">
+        <img src="assets/room-1.jpg" width="1100" height="827" loading="lazy" alt="غرفة علاج مجهّزة">
+        <figcaption class="cap">غرف علاج مجهّزة بأحدث الأجهزة</figcaption>
+      </figure>
+      <figure class="gal-item reveal d2">
+        <img src="assets/room-2.jpg" width="1100" height="827" loading="lazy" alt="غرفة علاج بتصميم مريح">
+        <figcaption class="cap">تفاصيل تبعث على الراحة والطمأنينة</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="assets/smile.jpg" width="1100" height="464" loading="lazy" alt="نتيجة تجميل أسنان — فينير">
+        <figcaption class="cap">نتائج تجميلية طبيعية بعدسات الفينير</figcaption>
+      </figure>
+      <figure class="gal-item reveal d1">
+        <img src="assets/reception.jpg" width="900" height="1200" loading="lazy" alt="ركن استقبال العيادة">
+        <figcaption class="cap">ركن الاستقبال</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOURS + LOCATION ===== -->
+<section class="blk visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:clamp(28px,5vw,44px)">
+      <span class="eyebrow reveal">المواعيد والموقع</span>
+      <h2 class="reveal d1" style="color:#fff">نستقبلكم في أي وقت — على طريق ياجوز</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="hours-card reveal">
+        <div class="always">
+          <svg class="clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <div>
+            <div class="big">مفتوح ٢٤ ساعة</div>
+            <small>طوال أيام الأسبوع · بما في ذلك الطوارئ</small>
+          </div>
+        </div>
+        <ul class="rows">
+          <li><span>السبت – الخميس</span><span>على مدار الساعة</span></li>
+          <li><span>الجمعة</span><span>على مدار الساعة</span></li>
+          <li><span>حالات الطوارئ</span><span>مرحّب بها ليلاً ونهاراً</span></li>
+        </ul>
+        <div class="info-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span>طريق ياجوز، عمّان — الأردن</span>
+        </div>
+        <div class="info-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5c0 8 7 15 15 15v-3.5l-4-1.5-2 2c-2-1-4-3-5-5l2-2L12 5H4z"/></svg>
+          <span class="lat" style="direction:ltr;unicode-bidi:embed">+962 7 8178 5148</span>
+        </div>
+        <div class="visit-cta">
+          <a class="btn btn-wa" href="https://wa.me/962781785148?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%81%D9%8A%20%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B1%D9%88%D8%A7%D9%86%20%D8%AD%D8%B3%D9%86" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.24A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.5 12.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49 2.98 1.29 2.98.86 3.52.81.54-.05 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+            احجز موعدك عبر واتساب
+          </a>
+          <a class="btn btn-ghost" style="color:#F5EFE4;border-color:rgba(245,239,228,.3)" href="https://maps.google.com/?cid=16941898140888435154&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:20px;height:20px"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            الاتجاهات على الخريطة
+          </a>
+        </div>
+      </div>
+      <div class="map-wrap reveal d1">
+        <iframe src="https://maps.google.com/maps?q=32.0260965,35.8567651&z=17&hl=ar&output=embed" title="موقع عيادة الدكتورة روان حسن على خرائط جوجل" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="blk contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <span class="eyebrow" style="margin-bottom:8px;display:inline-flex">احجز الآن</span>
+      <h2>ابتسامتك تستحق موعداً اليوم</h2>
+      <p>راسلينا على واتساب وسنؤكّد موعدك خلال دقائق — استشارة، طوارئ، أو خطة علاج كاملة. نحن هنا على مدار الساعة.</p>
+      <div class="phone-line">+962 7 8178 5148</div>
+      <div class="contact-cta">
+        <a class="btn btn-wa" href="https://wa.me/962781785148?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%81%D9%8A%20%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B1%D9%88%D8%A7%D9%86%20%D8%AD%D8%B3%D9%86" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.24A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.5 12.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49 2.98 1.29 2.98.86 3.52.81.54-.05 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+          احجز موعدك عبر واتساب
+        </a>
+        <a class="btn btn-gold" href="tel:+962781785148">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:20px;height:20px"><path d="M4 5c0 8 7 15 15 15v-3.5l-4-1.5-2 2c-2-1-4-3-5-5l2-2L12 5H4z"/></svg>
+          اتصل بالعيادة
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 4C24 16 30 22 42 24 30 26 24 32 24 44 24 32 18 26 6 24 18 22 24 16 24 4Z" fill="#E6D3A3" opacity=".95"/>
+        <path d="M24 12C24 19 27 22 34 24 27 26 24 29 24 36 24 29 21 26 14 24 21 22 24 19 24 12Z" fill="#2C2822"/>
+      </svg>
+      <span class="txt">
+        <b>عيادة الدكتورة روان حسن</b>
+        <span class="lat">Dental &amp; Oral Surgery · Amman</span>
+      </span>
+    </a>
+    <div class="foot-meta">
+      طريق ياجوز، عمّان — الأردن<br>
+      <span class="lat" style="direction:ltr;unicode-bidi:embed">+962 7 8178 5148</span> · مفتوح ٢٤ ساعة<br>
+      <a href="https://wa.me/962781785148" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:26px">
+    <div class="foot-credit">
+      <span>© 2026 عيادة الدكتورة روان حسن لطب وجراحة الأسنان</span>
+      <span>Demo by <a href="https://www.aro.solutions" target="_blank" rel="noopener">ARO Solutions</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- floating WhatsApp -->
+<a class="fab" href="https://wa.me/962781785148?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%81%D9%8A%20%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A9%20%D8%B1%D9%88%D8%A7%D9%86%20%D8%AD%D8%B3%D9%86" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.24A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.5 12.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49 2.98 1.29 2.98.86 3.52.81.54-.05 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  var onScroll=function(){ if(window.scrollY>28){hdr.classList.add('scrolled');}else{hdr.classList.remove('scrolled');} };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items=document.querySelectorAll('.reveal');
+  if(reduce||!('IntersectionObserver' in window)){
+    items.forEach(function(el){el.classList.add('in');});
+  }else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){io.observe(el);});
+  }
+})();
+</script>
+</body>
+</html>
